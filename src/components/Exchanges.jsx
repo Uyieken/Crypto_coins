@@ -7,7 +7,6 @@ import Loader from './Loader';
 
 const Exchanges = () => {
   const { data, isFetching } = useGetExchangesQuery();
-  const exchangesList = data?.data?.exchanges;
   // Note: This endpoint needs premium plan
   if (isFetching) return <Loader />;
 
